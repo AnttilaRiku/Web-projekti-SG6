@@ -1,0 +1,54 @@
+/* :D:DD:D*/
+
+
+
+
+/* Style the navbar brand */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+ 
+  }
+  
+  /* Style the navbar links */
+  .navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+   
+  }
+  
+
+  /* Style the dropdown menu */
+  .navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the dropdown items */
+  .navbar-nav .dropdown-item {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Style the dropdown items on hover */
+  .navbar-nav .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+
+
+/* Carousel changes come here */
+#carouselExampleFade {
+    width: 60%;
+    height:auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    object-fit: cover;
+  }
+
+  /*Card image editing goes here*/
+  .card-img-top {
+    width:50%;
+    height:50%;
+    
+  }
