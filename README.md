@@ -22,3 +22,8 @@ To do in sprint 1:
 - Have all links working from and to index
 
 -Riku Anttila 28/3/2023 
+
+
+30/3.2023 Memo
+Github Usernames: AnttilaRiku (Anttila Riku), RoosaPP (Roosa Pitkänen), TatuHakkarainen (Tatu Hakkarainen), vileeni2 (Ville Sinkkonen), Lehk1s (Veeti Lehkonen), Anzuv (Anu Vehviläinen), Railisim
+
