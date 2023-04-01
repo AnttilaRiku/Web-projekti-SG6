@@ -82,3 +82,13 @@
   color: var(--quaternary-color);
   transition: color 0.3s ease-in-out;
 }
+
+.jumbotron {
+  background-color: #97DEFF;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 30px;
+  text-align: center;
+}
