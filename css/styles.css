@@ -1,54 +1,84 @@
 /* :D:DD:D*/
 /*tehkää jotain muutoksia jos siltä tuntuu*/
 
-
+/* Define the color variables */
+:root {
+  --primary-color: #AA77FF;
+  --secondary-color: #C9EEFF;
+  --tertiary-color: #97DEFF;
+  --quaternary-color: #62CDFF;
+}
 
 /* Style the navbar brand */
 .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
- 
-  }
-  
-  /* Style the navbar links */
-  .navbar-nav .nav-link {
-    color: #333;
-    font-size: 18px;
-   
-  }
-  
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  /* Style the dropdown menu */
-  .navbar-nav .dropdown-menu {
-    background-color: #f8f9fa;
-    border: none;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style the dropdown items */
-  .navbar-nav .dropdown-item {
-    color: #333;
-    font-size: 16px;
-  }
-  
-  /* Style the dropdown items on hover */
-  .navbar-nav .dropdown-item:hover {
-    background-color: #e9ecef;
-  }
+/* Style the navbar links */
+.navbar-nav .nav-link {
+  color: var(--primary-color);
+  font-size: 18px;
+}
 
+/* Style the dropdown menu */
+.navbar-nav .dropdown-menu {
+  background-color: var(--secondary-color);
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-/* Carousel changes come here */
-#carouselExampleFade {
-    width: 60%;
-    height:auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    object-fit: cover;
-  }
+/* Style the dropdown items */
+.navbar-nav .dropdown-item {
+  color: var(--primary-color);
+  font-size: 16px;
+}
 
-  /*Card image editing goes here*/
-  .card-img-top {
-    width:50%;
-    height:50%;
-    
+/* Style the dropdown items on hover */
+.navbar-nav .dropdown-item:hover {
+  background-color: var(--tertiary-color);
+}
+
+/*Card image editing goes here*/
+.card-img-top {
+  width: 50%;
+  height: 50%;
+}
+
+/* Define the keyframe animation */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
   }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the cards */
+#game1 .card,
+#game2 .card,
+#game3 .card,
+#game4 .card,
+#game5 .card,
+#game6 .card {
+  animation: pop-in 0.6s ease-out;
+  background-color: var(--quaternary-color);
+  color: #fff;
+  border-color: var(--quaternary-color);
+}
+
+/* Game card hover animation */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar link hover animation */
+.navbar-nav .nav-link:hover {
+  color: var(--quaternary-color);
+  transition: color 0.3s ease-in-out;
+}
