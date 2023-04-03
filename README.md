@@ -9,4 +9,5 @@ vileeni2 (Ville Sinkkonen)
 Lehk1s (Veeti Lehkonen)
 Anzuv (Anu Vehviläinen)
 
+View Roadmap.md for devblog / weekly edits  
 
