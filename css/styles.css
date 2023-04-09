@@ -9,6 +9,10 @@
   --quaternary-color: #62CDFF;
 }
 
+main {
+  padding-bottom: 80px;
+}
+
 /* Style the navbar brand */
 .navbar-brand {
   font-size: 24px;
