@@ -39,10 +39,21 @@
   background-color: var(--tertiary-color);
 }
 
+/*Cards centered on front page*/
+#games {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 /*Card image editing goes here*/
 .card-img-top {
   width: 50%;
-  height: 50%;
+  height: auto;
+}
+
+.card {
+  width: 70%;
+  height: 70%;
 }
 
 /* Define the keyframe animation */
