@@ -92,7 +92,7 @@ function questionEngine (index) {
     c_option.innerText = question.c;
     d_option.innerText = question.d;
     info = question.info;
-    
+
 
 }
 
@@ -100,10 +100,10 @@ function checkAns() {
     let answer = getAnswered();
     let verdict;
     document.getElementById("score").innerHTML = "";
-    
-    
+
+
     questionIndex++;
-    
+
     if (answer == "option1" && correctAnswer == "a") {
         score++;
         verdict = "Oikea vastaus";
