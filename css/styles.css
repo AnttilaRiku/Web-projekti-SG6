@@ -47,6 +47,8 @@ main {
 #games {
   max-width: 1800px;
   margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /*Card image editing goes here*/
@@ -58,6 +60,10 @@ main {
 .card {
   width: 70%;
   height: 70%;
+}
+
+.card-title {
+  text-align: center;
 }
 
 /* Define the keyframe animation */
