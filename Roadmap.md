@@ -57,3 +57,18 @@ Next meeting is scheduled in 06/04/2023
 [020423Memo.txt](https://github.com/AnttilaRiku/Web-projekti-SG6/files/11132004/020423Memo.txt)
 
 
+### Meeting 10/04/2023 Summary:
+
+For starters we summarized our progress in sprint one. We also had a conversation about our goals and achievements in sprint 1. 
+We spectated our website through Discord and discussed things that needed some adjustements and changes (ie. background colour for index).
+We all agreed to our goals in sprint two and started to work as a team and individual since we need to do an individual game in our assignment. 
+Next meeting will be scheduled after our retrospective and evaluation made by our teacher. 
+
+In sprint two we will focus on our individual goals more since we need to complete the game project. We will continue to have these weekly conversations 
+and give assistence to our study group members if possible. Overall we all were happy with the results we got in the first sprint. 
+
+-Riku Anttila, 10/04/2023
+
+
+
+
