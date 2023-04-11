@@ -113,3 +113,9 @@ main {
   border-radius: 30px;
   text-align: center;
 }
+
+#center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
