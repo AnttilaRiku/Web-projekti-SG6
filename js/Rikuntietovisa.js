@@ -60,7 +60,7 @@
     },
 
     {
-        question: "Millä nimellä kuvassa oleva heinäsorsa myös tunnetaan?",
+        question: "Millä nimellä kuvassa oleva sinisorsa myös tunnetaan?",
         a: "a. Kukkasorsa",
         b: "b. Hamppusorsa",
         c: "c. Dänkkisorsa",
@@ -85,10 +85,14 @@
     const image = document.querySelector('img');
     const startBtn = document.getElementById("start");
     const quizForm = document.getElementById("quiz-form");
+    const returnbtn = document.getElementById("returnbtn");
+    const tarkastabtn = document.getElementById("tarkasta");
+    const nextbtn = document.getElementById("next");
 
     // Start quiz //
      function startQuiz() {
      startBtn.classList.add("hidden");
+     returnbtn.classList.add("hidden");
     quizForm.classList.remove("hidden");
     loadCurrentQuestion();
      }
@@ -104,8 +108,9 @@ const optionDElem = document.getElementById("answd");
 const infoElem = document.getElementById("info");
 const correctAnswer = questionlist.correct;
 
-// Initialize the current question index to 0
+// Initialize the current question index & score to 0
 let currentQuestionIndex = 0;
+let score = 0;
 
 // Function to load the current question and options into the quiz form
 function loadCurrentQuestion() {
@@ -122,6 +127,11 @@ function loadCurrentQuestion() {
     event.preventDefault();
     const selectedOption = document.querySelector('input[name="option"]:checked');
     const answer = selectedOption ? selectedOption.value : '';
+
+    if (!selectedOption) { // Check if no option is selected
+      infoElem.innerText = "Valitse yksi vaihtoehto vastaukseksi!";
+      return; // Stop the function execution if no option is selected
+    }
   
     let verdict;
     const currentQuestion = questionlist[currentQuestionIndex];
@@ -129,49 +139,73 @@ function loadCurrentQuestion() {
   
     if (selectedOption && selectedOption.labels[0].id === 'answa' && correctAnswer === 'a') {
         score++;
-        verdict = 'Oikea vastaus';
+        verdict = 'Oikea vastaus!';
       } else if (selectedOption && selectedOption.labels[0].id === 'answb' && correctAnswer === 'b') {
         score++;
-        verdict = 'Oikea vastaus';
+        verdict = 'Oikea vastaus!';
       } else if (selectedOption && selectedOption.labels[0].id === 'answc' && correctAnswer === 'c') {
         score++;
-        verdict = 'Oikea vastaus';
+        verdict = 'Oikea vastaus!';
       } else if (selectedOption && selectedOption.labels[0].id === 'answd' && correctAnswer === 'd') {
         score++;
-        verdict = 'Oikea vastaus';
+        verdict = 'Oikea vastaus!';
       } else {
-        verdict = 'vastaus on väärin. Oikea vastaus on ' + correctAnswer;
+        verdict = 'Vastaus on väärin. Oikea vastaus on ' + correctAnswer;
       }
-
+      if (answer === correctAnswer) {
+        score++;
+      }
+  
     document.getElementById("score").innerHTML = verdict;
     document.getElementById("info").innerHTML = currentQuestion.info;
 
   }
 
 
-function loadNextQuestion(event) {
-    document.getElementById("info").innerHTML ="";
-    document.getElementById("score").innerHTML ="";
+  function loadNextQuestion(event) {
+    document.getElementById("info").innerHTML = "";
+    document.getElementById("score").innerHTML = "";
     event.preventDefault();
-  document.querySelectorAll('input[type="radio"]').forEach((option) => {
-    option.checked = false; // Reset the selected option
-  });
 
-  currentQuestionIndex++; // Move to the next question
+    const selectedOption = document.querySelector('input[name="option"]:checked');
 
-  // Check if all questions have been answered
-  if (currentQuestionIndex >= questionlist.length) {
-    document.getElementById("quiz-form").classList.add("hidden"); // Hide the quiz form
-    document.getElementById("score").innerHTML = `Lopputulos: ${score}/${questionlist.length}`; // Show the final score
+  if (!selectedOption) {
+    alert('Vastaa nyt edes jotain!');
     return;
   }
-  const currentQuestion = questionlist[currentQuestionIndex];
-  document.getElementById("question").innerHTML = currentQuestion.question;
-  document.getElementById("answa").innerHTML = currentQuestion.a;
-  document.getElementById("answb").innerHTML = currentQuestion.b;
-  document.getElementById("answc").innerHTML = currentQuestion.c;
-  document.getElementById("answd").innerHTML = currentQuestion.d;
-  document.getElementById("question-img").src = `../img/RikuA_quizimg/${currentQuestionIndex + 1}.jpg`;
-  image.src = `question-img\\${imageFilenames[currentQuestionIndex]}`;
 
-}
+    document.querySelectorAll('input[type="radio"]').forEach((option) => {
+      option.checked = false; // Reset the selected option
+    });
+  
+    currentQuestionIndex++; // Move to the next question
+
+  
+    // Check if all questions have been answered
+    if (currentQuestionIndex >= questionlist.length) {
+      document.getElementById("current-score").innerHTML = `Pistemääräsi lopussa: ${score}/${questionlist.length}`; 
+      publishResult();
+      return;
+    }
+  
+    document.getElementById("current-score").innerHTML = `Pistemääräsi: ${score}/7`;
+  
+    const currentQuestion = questionlist[currentQuestionIndex];
+    document.getElementById("question").innerHTML = currentQuestion.question;
+    document.getElementById("answa").innerHTML = currentQuestion.a;
+    document.getElementById("answb").innerHTML = currentQuestion.b;
+    document.getElementById("answc").innerHTML = currentQuestion.c;
+    document.getElementById("answd").innerHTML = currentQuestion.d;
+    document.getElementById("question-img").src = `../img/RikuA_quizimg/${currentQuestionIndex + 1}.jpg`;
+    image.src = `question-img\\${imageFilenames[currentQuestionIndex]}`;
+  }
+
+  function publishResult() {
+   
+    currentQuestionIndex = 0;
+    score = 0;
+    returnbtn.classList.remove("hidden");
+    tarkastabtn.classList.add("hidden");
+    nextbtn.classList.add("hidden");
+
+  }
