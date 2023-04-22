@@ -51,9 +51,10 @@
       <h1 class="display-4">Biologia</h1>
       <p class="lead">Tässä pieni kysely biologiasta!</p>
       <button class="button" onclick="startQuiz()" id="start">Aloita peli</button>
+      </button>
       <form id="quiz-form" class="hidden">
         <h2><p id="question"></p></h2>
-        <img src="../img/RikuA_quizimg/1.jpg" id="question-img" height="200" width="200" alt="Hedgehog">
+        <img src="../img/RikuA_quizimg/1.jpg" id="question-img" height="250" width="auto" alt="Hedgehog">
         <br>
         <input type="radio" id="option1" name="option" value="option1" class="option">
         <label id="answa" for="option1" class="answer"></label><br>
@@ -66,12 +67,15 @@
 
         <input type="radio" id="option4" name="option" value="option4" class="option">
         <label id="answd" for="option4" class="answer"></label><br>
-
+        <p id="current-score"></p>
         <p class="score" id="score"></p>
         <p id="info"></p><br>
         <button class="button" onclick="checkAnswer(event)" id="tarkasta">Tarkista</button>
         <button class="button" onclick="loadNextQuestion(event)" id="next" type="button">Seuraava kysymys</button>
+        <button class="button" id="returnbtn" a href="../index.html">Palaa aloitussivulle</a>
       </form>
+      
+      
     </div>
 
      <!--Jumbotron Ends here-->

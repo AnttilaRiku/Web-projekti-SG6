@@ -48,14 +48,30 @@
      <!--NavBar Ends here-->
      <!--Jumbotron-->
     <div class="jumbotron">
-      <h1 class="display-4">Peli tähän</h1>
-      <p class="lead"></p>tekstiä
-      <p>tekstiä</p>
-      <p>tekstiä</p>
-      <p>tekstiä</p>
-      <p>tekstiä</p>
+      <h1 class="display-4">Maantieto</h1>
+      <p class="lead"></p>
+      <p id="question"></p>
+      <div class="quizOptions">
+      <input type="radio" id="option1" name="option" value="option1" class="option"  >
+      <label id="opt1" for="option1" class="ans"></label><br>
+
+      <input type="radio" id="option2" name="option" value="option2" class="option"  >
+      <label id="opt2" for="option2" class="ans"></label><br>
+
+      <input type="radio" id="option3" name="option" value="option3" class="option"  >
+      <label id="opt3" for="option3" class="ans"></label><br>
+
+      <input type="radio" id="option4" name="option" value="option4" class="option"  >
+      <label id="opt4" for="option4" class="ans"></label>
+      <br><br><br>
+      <p class="score" id="score"></p>
+      <p id="info"></p>
+      <br>
+      <button class="button" onclick="checkAns()" id="check">Tarkista</button>
+      <button class="button" onclick="load()" id="next">Seuraava</button><br><br>
+      </div>
     </div>
-     <!--Jumbotron Ends here-->
+    <!--Jumbotron Ends here-->
     <!-- Copyright / Some stupid footer  -->
     <footer>
     <div class="text-center text-black p-3" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -63,6 +79,7 @@
     </div>
   </footer>
       </div>
+      <script src="../js/villenvisa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
   </body>
 </html>
