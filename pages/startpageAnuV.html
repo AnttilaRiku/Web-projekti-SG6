@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    
-
+    <link rel="stylesheet" href="../css/stylesAnuV.css">
   </head>
   <body>
     <link rel="icon" type="image/x-icon" href="../img/sg6-high-resolution-logo-black-on-transparent-background.png">
-      <!--NavBar Suggestion-->
+      
       <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../img/sg6-high-resolution-logo-black-on-transparent-background.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-    </a>
+            <img src="../img/sg6-high-resolution-logo-black-on-transparent-background.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a> 
+    
+    <!-- nav start here-->
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,48 +46,25 @@
         </div>
       </div>
     </nav>
-     <!--NavBar Ends here-->
-     <div class="jumbotron">
-      <h1 class="display-4">Biologia</h1>
-      <p class="lead">Tässä pieni kysely biologiasta!</p>
-      <button class="button" onclick="startQuiz()" id="start">Aloita peli</button>
-      </button>
-      <form id="quiz-form" class="hidden">
-        <h2><p id="question"></p></h2>
-        <img src="../img/RikuA_quizimg/1.jpg" id="question-img" height="250" width="auto" alt="Hedgehog">
-        <br>
-        <input type="radio" id="option1" name="option" value="option1" class="option">
-        <label id="answa" for="option1" class="answer"></label><br>
+    <!--nav ends here-->
 
-        <input type="radio" id="option2" name="option" value="option2" class="option">
-        <label id="answb" for="option2" class="answer"></label><br>
-
-        <input type="radio" id="option3" name="option" value="option3" class="option">
-        <label id="answc" for="option3" class="answer"></label><br>
-
-        <input type="radio" id="option4" name="option" value="option4" class="option">
-        <label id="answd" for="option4" class="answer"></label><br>
-        <p id="current-score"></p>
-        <p class="score" id="score"></p>
-        <p id="info"></p><br>
-        <button class="button" onclick="checkAnswer(event)" id="tarkasta">Tarkista</button>
-        <button class="button" onclick="loadNextQuestion(event)" id="next" type="button">Seuraava kysymys</button>
-        <button class="button" id="returnbtn" a href="../index.html">Palaa aloitussivulle</a>
-      </form>
-      
-      
+    <div class="start"><br>
+        <h1>Tervetuloa Kotitalous Visaan</h1><br>
+        <img src="../img/AnuV_quizimg/vegetables.webp" style="width: 40%;" class="kasviksia"><br>
+        <a class="btn-start" href="../pages/KotitalousAnuV.html">Aloita Visailu</a>
     </div>
+ 
 
-     <!--Jumbotron Ends here-->
-    <!-- Copyright / Some stupid footer  -->
+    <!--footer start here-->
     <footer>
     <div class="text-center text-black p-3" style="background-color: rgba(0, 0, 0, 0.2);">
      © 2023 Copyright: SG6 Gigachads / Chadettes
     </div>
   </footer>
-      </div>
-      <script src="../js/Rikuntietovisa.js"></script>
+   <!--Footer ends here-->
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    
+  <script src="../js/KotitalousAnuV.js"></script>
   </body>
 </html>
+
