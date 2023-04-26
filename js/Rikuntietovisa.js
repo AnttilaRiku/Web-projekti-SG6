@@ -132,11 +132,11 @@ function loadCurrentQuestion() {
       infoElem.innerText = "Valitse yksi vaihtoehto vastaukseksi!";
       return; // Stop the function execution if no option is selected
     }
-  
+
     let verdict;
     const currentQuestion = questionlist[currentQuestionIndex];
     const correctAnswer = currentQuestion.correct;
-  
+
     if (selectedOption && selectedOption.labels[0].id === 'answa' && correctAnswer === 'a') {
         score++;
         verdict = 'Oikea vastaus!';
@@ -155,7 +155,7 @@ function loadCurrentQuestion() {
       if (answer === correctAnswer) {
         score++;
       }
-  
+
     document.getElementById("score").innerHTML = verdict;
     document.getElementById("info").innerHTML = currentQuestion.info;
 
@@ -177,19 +177,19 @@ function loadCurrentQuestion() {
     document.querySelectorAll('input[type="radio"]').forEach((option) => {
       option.checked = false; // Reset the selected option
     });
-  
+
     currentQuestionIndex++; // Move to the next question
 
-  
+
     // Check if all questions have been answered
     if (currentQuestionIndex >= questionlist.length) {
       document.getElementById("current-score").innerHTML = `Pistemääräsi lopussa: ${score}/${questionlist.length}`; 
       publishResult();
       return;
     }
-  
+
     document.getElementById("current-score").innerHTML = `Pistemääräsi: ${score}/7`;
-  
+
     const currentQuestion = questionlist[currentQuestionIndex];
     document.getElementById("question").innerHTML = currentQuestion.question;
     document.getElementById("answa").innerHTML = currentQuestion.a;
@@ -201,7 +201,7 @@ function loadCurrentQuestion() {
   }
 
   function publishResult() {
-   
+
     currentQuestionIndex = 0;
     score = 0;
     returnbtn.classList.remove("hidden");

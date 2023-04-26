@@ -6,48 +6,48 @@
     --tertiary-color: #97DEFF;
     --quaternary-color: #62CDFF;
   }
-  
+
   main {
     padding-bottom: 80px;
   }
-  
+
   /* Style the navbar brand */
   .navbar-brand {
     font-size: 24px;
     font-weight: bold;
   }
-  
+
   /* Style the navbar links */
   .navbar-nav .nav-link {
     color: var(--primary-color);
     font-size: 18px;
   }
-  
+
   /* Style the dropdown menu */
   .navbar-nav .dropdown-menu {
     background-color: var(--secondary-color);
     border: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* Style the dropdown items */
   .navbar-nav .dropdown-item {
     color: var(--primary-color);
     font-size: 16px;
   }
-  
+
   /* Style the dropdown items on hover */
   .navbar-nav .dropdown-item:hover {
     background-color: var(--tertiary-color);
   }
-  
-  
+
+
   /* Navbar link hover animation */
   .navbar-nav .nav-link:hover {
     color: var(--quaternary-color);
     transition: color 0.3s ease-in-out;
   }
- 
+
   /* Style the h1 and h5 */
   h1 {
     text-align: center;
@@ -80,7 +80,7 @@
     width: 40%;
     background-color: none;
   }
- 
+
   .wrapper{
     display: flex;
     justify-content: center;
@@ -88,15 +88,15 @@
     width: 100vw;
     height: 100vh;
   }
- 
+
  /* Style the Quiz*/
  .quiz{
      display: grid;
      grid-template-rows: 60px auto;
   }
-  
+
 /* Style the Quiz body */
- .quiz_body{ 
+ .quiz_body{
      border-radius: 30px;
      padding: 20px 30px;
      margin-top: 19%;
@@ -109,15 +109,15 @@
   /* Style the questions color*/
   #questions {
     color: var(--primary-color);
-  
+
   }
- 
+
   /* Style the options*/
   .option_group{
      list-style-type:none;
      margin: 30px 0;
   }
- 
+
   /* Style the option*/
   .option{
      display: flex;
@@ -131,19 +131,19 @@
      border: 2px solid var(--primary-color);
      transition: 0.4s all;
    }
- 
+
   /* Style the hover*/
   .option:hover{
      cursor: pointer;
      border: 2px solid var(--secondary-color);
      color: var(--primary-color);
   }
- 
+
   .option.active{
      background-color: var(--primary-color);
      color: #fff;
   }
- 
+
   /* Style the next button*/
    .btn-next{
      border: 2px solid var(--primary-color);
@@ -153,14 +153,14 @@
      border-radius: 50px;
      transition: 0.4s all;
   }
- 
+
   /* Style the button next hover*/
    .btn-next:hover{
      cursor: pointer;
      background-color: var(--primary-color);
      color: white;
   }
- 
+
   /* Style the userpoints */
    .userpoints{
      color: var(--primary-color);
@@ -169,7 +169,7 @@
      font-size: xx-large;
      font-weight: bold;
   }
- 
+
   /* Style the final page */
   .final {
     border-radius: 30px;
@@ -191,7 +191,7 @@
     color: #AA77FF;
     font-weight: bold;
     background-color: var(--quaternary-color);
-  
+
   }
 
   .start {
@@ -214,7 +214,7 @@
     padding: 5%;
     border-radius: 15px;
     font-size: x-large;
-     
+
   }
 
   .btn-start:hover {

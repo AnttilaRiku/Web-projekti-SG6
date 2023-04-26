@@ -60,7 +60,7 @@ const  d_option = document.getElementById("opt4");
 const answerInputs = document.querySelectorAll(".option");
 const info1 = document.getElementById("info");
 
-load(); 
+load();
 
 function load() {
     document.getElementById("info").innerHTML ="";

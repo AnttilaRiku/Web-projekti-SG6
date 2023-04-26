@@ -45,7 +45,7 @@ const data = [
         info:"Suomen korkein tunturi on Halti.",
     },
 
-    
+
 ];
 
 let questionIndex = 0;
@@ -60,7 +60,7 @@ const  b_option = document.getElementById("opt2");
 const  c_option = document.getElementById("opt3");
 const  d_option = document.getElementById("opt4");
 const answerInputs = document.querySelectorAll(".option");
- 
+
 
 load();
 questionEngine(questionIndex);

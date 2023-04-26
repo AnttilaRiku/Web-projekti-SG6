@@ -10,7 +10,7 @@ let questions = [
             "Jauhot",
             "Vesi",
             "Hiiva"
-        ]    
+        ]
     },
     {
         id: 2,
@@ -79,7 +79,7 @@ function show(count){
     <li class="option">${third}</li>
     <li class="option">${fourth}</li>
     </ul>`;
-    toggleActive();  
+    toggleActive();
 }
 
 
