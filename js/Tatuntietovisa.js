@@ -21,36 +21,36 @@ const questions = [
         question: "Laske yhteen luvut 2, 6, 8, 4 ja 10, ja jaa sitten tulos viidellä. Mikä on vastaus?",
         answers: [
             {text: "4" , correct: false},
-            {text: "5" , correct: true},
-            {text: "6" , correct: false},
+            {text: "5" , correct: false},
+            {text: "6" , correct: true},
             {text: "7" , correct: false},
         ]
     },
     {
-        question: "Mikä on x, jos 3  2 = 11?",
+        question: "Kuinka monta millimetriä on metrissä?",
         answers: [
-            {text: "8" , correct: false},
-            {text: "9" , correct: false},
-            {text: "10" , correct: true},
-            {text: "11" , correct: false},
+            {text: "1" , correct: false},
+            {text: "100" , correct: false},
+            {text: "1000" , correct: true},
+            {text: "10000" , correct: false},
         ]
     },
     {
-        question: "Mikä on seuraavien lukujen keskiarvo: 8, 10, 11, 13, 8?",
+        question: "Laske seuraavan lukujonon summa: 1 + 2 + 3 + 4 + 5. Mikä on vastaus?",
         answers: [
-            {text: "8" , correct: false},
-            {text: "9" , correct: false},
-            {text: "10" , correct: true},
-            {text: "11" , correct: false},
+            {text: "10" , correct: false},
+            {text: "15" , correct: true},
+            {text: "16" , correct: false},
+            {text: "20" , correct: false},
         ]
     },
     {
-        question: "Mikä on seuraavien lukujen keskiarvo: 8, 10, 11, 13, 8?",
+        question: "Jos sinulla on 60 kynää ja jaat ne tasan 3 henkilölle, kuinka monta kynää jokaisella henkilöllä on??",
         answers: [
-            {text: "8" , correct: false},
-            {text: "9" , correct: false},
-            {text: "10" , correct: true},
-            {text: "11" , correct: false},
+            {text: "10" , correct: false},
+            {text: "15" , correct: false},
+            {text: "20" , correct: true},
+            {text: "30" , correct: false},
         ]
     },
    
