@@ -36,15 +36,6 @@ const questions = [
         ]
     },
     {
-        question: "Laske seuraavan lukujonon summa: 1 + 2 + 3 + 4 + 5. Mikä on vastaus?",
-        answers: [
-            {text: "10" , correct: false},
-            {text: "15" , correct: true},
-            {text: "16" , correct: false},
-            {text: "20" , correct: false},
-        ]
-    },
-    {
         question: "Jos sinulla on 60 kynää ja jaat ne tasan 3 henkilölle, kuinka monta kynää jokaisella henkilöllä on??",
         answers: [
             {text: "10" , correct: false},
@@ -140,13 +131,30 @@ function selectAnswer(e){
 
 }
 
-// Function to show the user's score when all questions have been answered
-function showScore(){
+// Function to show the user's score and provide feedback
+function showScore() {
     // Reset the state of the page (remove previous answer buttons)
     resetState();
-    questionElement.innerHTML = `Sinun pisteesi ${score} / ${questions.length}`;
+
+    // Set the feedback message based on the score 
+    let feedback = "";
+    if (score === 5) {
+        feedback = "Sait täydet pisteet!!! Hienoa! &#128293 &#128079 &#128513 &#128293";
+    } else if (score >= 4) {
+        feedback = "Loistava suoritus! Ainoastaan yksi väärin &#128526";
+    } else if (score >= 3) {
+        feedback = "Hyvä suoritus! Kaksi väärin &#128522";
+    } else if (score >= 2) {
+        feedback = "Sait kaksi pistettä. Jatka harjoittelua! &#128578";
+    }else if (score >= 1){
+        feedback = "Sait vain yhden oikein. Jatka harjoittelua &#128528";
+    }else{
+        feedback = "Sait nolla pistettä. Jatka harjoittelua &#128542";
+    }
+    // Display the score and feedback message
+    questionElement.innerHTML = `Sinun pisteesi: ${score} / ${questions.length}<br><br>${feedback}`;
     nextButton.innerHTML = "Pelaa uudestaan";
-    nextButton.style.display ="block";
+    nextButton.style.display = "block";
   
 }
 
