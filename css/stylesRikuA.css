@@ -1,0 +1,249 @@
+/* Define the color variables */
+:root {
+    --primary-color: #aa77ff;
+    --secondary-color: #c9eeff;
+    --tertiary-color: #97deff;
+    --quaternary-color: #62cdff;
+  }
+  
+  main {
+    padding-bottom: 80px;
+  }
+  /* Button customisation*/
+  
+  .button {
+    background-color: #62cdff;
+    color: black;
+    padding: 12px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 12px;
+  }
+  
+  .button:hover {
+    background-color: #aa77ff;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Radio button shenanigans */
+  input[type="radio"] {
+    display: none;
+    justify-content: center;
+  }
+  
+  label.answer:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: #aa77ff;
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    animation-name: radio-checked;
+    animation-duration: 0.8s;
+  }
+  
+  @keyframes radio-checked {
+    0% {
+      transform: scale(1);
+      background-color: #aa77ff;
+      box-shadow: none;
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: #aa77ff;
+      box-shadow: 0 0 5px #aa77ff;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #aa77ff;
+      box-shadow: none;
+    }
+  }
+  
+  /* Score stuff */
+  #score {
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 1s ease 1s forwards;
+  }
+  
+  #score::before,
+  #score::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #info {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 2s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Test area ends */
+  
+  label {
+    position: relative;
+    color: black;
+    font-size: 22px;
+    border: 3px solid #aa77ff;
+    border-radius: 5px;
+    padding: 10px 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin-top: 10px;
+  }
+  
+  label:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 3px solid #aa77ff;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  input[type="radio"].checked + label {
+    background-color: #62cdff;
+    color: #62cdff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  input[type="radio"]:checked + label:before {
+    height: 16px;
+    width: 16px;
+    left: 12px;
+    top: 14px;
+    border: 10px solid #62cdff;
+    background-color: #62cdff;
+    animation: pulse 1.25s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  /* Style the navbar brand */
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style the navbar links */
+  .navbar-nav .nav-link {
+    color: var(--primary-color);
+    font-size: 18px;
+  }
+  
+  /* Style the dropdown menu */
+  .navbar-nav .dropdown-menu {
+    background-color: var(--secondary-color);
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the dropdown items */
+  .navbar-nav .dropdown-item {
+    color: var(--primary-color);
+    font-size: 16px;
+  }
+  
+  /* Style the dropdown items on hover */
+  .navbar-nav .dropdown-item:hover {
+    background-color: var(--tertiary-color);
+  }
+  
+  /*Cards centered on front page*/
+  #games {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  /* Define the keyframe animation */
+  @keyframes pop-in {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Navbar link hover animation */
+  .navbar-nav .nav-link:hover {
+    color: var(--quaternary-color);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .jumbotron {
+    background-color: #97deff;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
