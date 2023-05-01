@@ -92,7 +92,12 @@ about our showcase. List of things necessary for a succesful video showcase are 
 - Each attendee will create a short video of their own quiz and end their showcase with a phrase ("Seuraavaksi X esittää videolla tietovisan aiheesta Y").
   The order for each attendees showcase is the same order that the website has for their games. The order is as following:
   
-  ####Matematiikka (Tatu), Maantieto (Ville), Biologia (Riku), Historia (Roosa), Yleistieto (Veeti), Kotitalous (Anu).
+ Matematiikka (Tatu)
+ Maantieto (Ville)
+ Biologia (Riku)
+ Historia (Roosa)
+ Yleistieto (Veeti)
+ Kotitalous (Anu)
   
 - Last member (Anu) Will say "Lopuksi esittelemme Tietoja meistä ja lyhyt esittely tehdyistä osioista:"
 
@@ -108,3 +113,4 @@ Next meeting is scheduled 8.5.2023.
 
 
 
+[mayfirstmemo.txt](https://github.com/AnttilaRiku/Web-projekti-SG6/files/11366193/mayfirstmemo.txt)
