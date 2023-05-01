@@ -69,6 +69,42 @@ and give assistence to our study group members if possible. Overall we all were 
 
 -Riku Anttila, 10/04/2023
 
+### 1/5 2023 Meeting Memo
+
+
+For starters we agreed together that sprint two was a success since everyone has uploaded their working quiz games on github.
+After our brief catch up chat we decided to look forward for our goals in sprint three and how to finish the project in two week deadline. 
+We took a critical look at our website and found things to work on. List below shows the tasks we decided as a team and who is in charge of them:
+
+- Ville: Responsibility checking and fixing mobile look on the cards ( 2 - 2 - 2 setup) for the page
+- Tatu: Tietoja sivu fine tuning, css styling
+- Riku: Index tuning, css styling 
+- Roosa: Article for index page.
+- Anu: Footer tuning and css styling
+- Veeti: Bugfixing, QA, reporting bugs to teammates.
+
+### Video showcase information:
+
+We began our preparations for the video showcase of the website. We discussed about the structure of the showcase and came up with a clear vision
+about our showcase. List of things necessary for a succesful video showcase are listed below (in order):
+
+- Brief index showcase (Riku A): End the index showcase saying ("Ensimmäisenä katsostaan Tatun matematiikan tietovisa").
+- Each attendee will create a short video of their own quiz and end their showcase with a phrase ("Seuraavaksi X esittää videolla tietovisan aiheesta Y").
+  The order for each attendees showcase is the same order that the website has for their games. The order is as following:
+  
+  ####Matematiikka (Tatu), Maantieto (Ville), Biologia (Riku), Historia (Roosa), Yleistieto (Veeti), Kotitalous (Anu).
+  
+- Last member (Anu) Will say "Lopuksi esittelemme Tietoja meistä ja lyhyt esittely tehdyistä osioista:"
+
+- Everyone will send their video to Roosa who will put them in Powerpoint. 
+
+Deadline for the video is 7.5.2023. 
+
+Next meeting is scheduled 8.5.2023.
+
+-Riku Anttila, 1/5/2023
+  
+  
 
 
 
