@@ -45,14 +45,28 @@ main {
 
 /*Cards centered on front page*/
 #games {
-  max-width: 1800px;
+  max-width: 1900px;
   margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .card-title {
   font-size: 1.8vw;
+  }
+
+  @media only screen and (max-width: 640px) {
+    .card-title {
+      font-size: 2.2vw;
+      }
+
+      #games {
+        max-width: 1900px;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
   }
 
 /*Card image editing goes here*/
