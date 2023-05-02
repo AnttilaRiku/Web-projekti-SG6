@@ -1,6 +1,3 @@
-/* :D:DD:D*/
-/*tehkää jotain muutoksia jos siltä tuntuu*/
-
 /* Define the color variables */
 :root {
   --primary-color: #AA77FF;
@@ -9,8 +6,45 @@
   --quaternary-color: #62CDFF;
 }
 
+#navbar {
+  background-color: #97DEFF !important;
+}
+
 main {
   padding-bottom: 80px;
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+background: linear-gradient(124deg, #C9EEFF, #97DEFF, #62CDFF, #97DEFF,  #C9EEFF, #97DEFF, #62CDFF, #97DEFF);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
 
 /* Style the navbar brand */
@@ -19,9 +53,10 @@ main {
   font-weight: bold;
 }
 
+
 /* Style the navbar links */
 .navbar-nav .nav-link {
-  color: var(--primary-color);
+  color: black;
   font-size: 18px;
 }
 
@@ -34,7 +69,7 @@ main {
 
 /* Style the dropdown items */
 .navbar-nav .dropdown-item {
-  color: var(--primary-color);
+  color: black;
   font-size: 16px;
 }
 
@@ -47,8 +82,9 @@ main {
 #games {
   max-width: 1900px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #97DEFF;
 }
 
 .card-title {
@@ -141,3 +177,7 @@ main {
 .hidden {
   display: none;
 }
+
+
+
+
