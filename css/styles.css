@@ -168,16 +168,54 @@ background-size: 1800% 1800%;
   text-align: center;
 }
 
-#center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/*Style Tietoja meistä page*/
+.background {
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: #97DEFF;
 }
 
-.hidden {
-  display: none;
+.cards .card-box {
+  padding: 20px;
+  background-color: #62CDFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.cards .card-box p {
+  color: black;
+}
 
+.card-box {
+  width: 100%;
+  height: 200px;
+}
 
+.cards {
+  margin-bottom: 20px;
 
+}
+
+#header {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+
+#header::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+}
+
+#text{
+  color: black;
+}
