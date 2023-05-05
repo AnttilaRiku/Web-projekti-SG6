@@ -62,17 +62,18 @@ let questions = [
 let question_count = 0;
 let points = 0;
 
-
+// Wait for the webpage to finish loading before calling the show() function
 window.onload = function(){
     show(question_count);
 };
 
-//question count
+// Define the show() function, which takes a count parameter (the question number)
 function show(count){
     let question = document.getElementById("questions");
     let[first, second, third, fourth] = questions[count].options;
 
-    question.innerHTML = `<h2>Q${count + 1}. ${questions[count].question}</h2>
+// Update the HTML of the question div to display the question and its options using HTML markup.
+    question.innerHTML = `<h2>${count + 1}. ${questions[count].question}</h2>
     <ul class="option_group">
     <li class="option">${first}</li>
     <li class="option">${second}</li>
@@ -82,7 +83,7 @@ function show(count){
     toggleActive();
 }
 
-
+// the toggleActive() function adds click event listeners to the answer options
 function toggleActive(){
     let option = document.querySelectorAll("li.option");
     for(let i=0; i < option.length; i++){
@@ -97,25 +98,25 @@ function toggleActive(){
     }
 }
 
-
+// the next() function is called when the user clicks the "Next" button
 function next(){
 
     if(question_count == questions.length -1){
-        location.href = "pointsAnuV.html";
+        location.href = "pointsAnuV.html"; // redirect the user to a page displaying their final score if there are no more questions.
     }
     console.log(question_count);
 
 
-let user_answer = document.querySelector("li.option.active").innerHTML;
+let user_answer = document.querySelector("li.option.active").innerHTML; // get the text content of the selected answer option
 
 if(user_answer == questions[question_count].answer){
-    points += 1;
-    sessionStorage.setItem("points",points);
+    points += 1;  // increment the points variable if the user's answer is correct
+    sessionStorage.setItem("points",points); // store the updated points value in the browser's sessionStorage object
 }
 console.log(points);
 
-question_count++;
-show(question_count);
+question_count++; // increment the question_count variable
+show(question_count); // call the show() function with the updated question_count variable as an argument
 }
 
 const yksi = "Vaatii vielä harjoittelua"
@@ -124,7 +125,7 @@ const neljä = "Melkein kaikki oikein, hienoa !"
 const viisi = "Erinomaista, kaikki oikein !"
 
 
-//get item
+//get points
 let user_points = sessionStorage.getItem("points");
 
 //output
