@@ -47,7 +47,7 @@ let questions = [
       },
       {
         id: 5,
-        question: "Mikä ihmeaine toimii siivousaineena, pyykinhuuhteluaineena, hajunpoistajana, ruuuanlaitossa, säilönnässä jne. ?",
+        question: "Mikä aine toimii siivousaineena, pyykinhuuhteluaineena, hajunpoistajana, säilönnässä jne. ?",
         answer: "Etikka",
         options: [
           "Vesi",
@@ -121,7 +121,7 @@ show(question_count); // call the show() function with the updated question_coun
 
 const yksi = "Vaatii vielä harjoittelua"
 const kolme = "Hyvin suoriuduttu"
-const neljä = "Melkein kaikki oikein, hienoa !"
+const neljä = "Hienosti osattu!"
 const viisi = "Erinomaista, kaikki oikein !"
 
 
@@ -144,7 +144,7 @@ else if(user_points = 4){
 }
 
 else if(user_points = 5){
-    document.querySelector("span.points").innerHTML = user_points + '<br>' +viisi;
+    document.querySelector("span.points").innerHTML = user_points + '<br>' + viisi;
 }
 
 
