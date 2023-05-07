@@ -139,17 +139,17 @@ function showScore() {
     // Set the feedback message based on the score 
     let feedback = "";
     if (score === 5) {
-        feedback = "Sait täydet pisteet!!! Hienoa! &#128293 &#128079 &#128513 &#128293";
+        feedback = "Sait täydet pisteet!! Hienoa! &#128293 &#128079 &#128513 &#128293";
     } else if (score >= 4) {
         feedback = "Loistava suoritus! Ainoastaan yksi väärin &#128526";
     } else if (score >= 3) {
-        feedback = "Hyvä suoritus! Kaksi väärin &#128522";
+        feedback = "Hyvä suoritus! Sait kolme oikein! &#128522";
     } else if (score >= 2) {
         feedback = "Sait kaksi pistettä. Jatka harjoittelua! &#128578";
     }else if (score >= 1){
-        feedback = "Sait vain yhden oikein. Jatka harjoittelua &#128528";
+        feedback = "Sait vain yhden oikein.&#128528 Jatka harjoittelua" ;
     }else{
-        feedback = "Sait nolla pistettä. Jatka harjoittelua &#128542";
+        feedback = "Et saanut yhtään oikein.&#128542 Jatka harjoittelua ";
     }
     // Display the score and feedback message
     questionElement.innerHTML = `Sinun pisteesi: ${score} / ${questions.length}<br><br>${feedback}`;
