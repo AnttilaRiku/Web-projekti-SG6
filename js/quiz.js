@@ -138,6 +138,3 @@ function publishResult() {
     questionIndex = 0;
     score = 0;
 }
-
-
-
