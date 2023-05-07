@@ -89,6 +89,7 @@ const nextbtn = document.getElementById("next");
 const questionamount = document.getElementById("questionamount");
 const lead = document.getElementById("title");
 const home = document.getElementById("homebtn");
+const titleimg = document.getElementById("titleimg");
 
 // Start quiz //
 function startQuiz() {
@@ -97,6 +98,7 @@ returnbtn.classList.add("hidden");
 quizForm.classList.remove("hidden");
 questionamount.classList.remove("hidden");
 lead.classList.add("hidden");
+titleimg.classList.add("hidden");
 questionamount.innerText = `Kysymys ${currentQuestionIndex + 1} / ${questionlist.length}`;
 
 loadCurrentQuestion();
@@ -229,11 +231,11 @@ function publishResult() {
 const feedback = document.getElementById("feedback");
 
 if (score === 7) {
-  feedback.innerHTML = "Vautsi vau! Olet todella kova luontotieteilijä jo. Jatka samaan malliin! :) Pistemääräsi oli " + score + "/" + questionlist.length;
+  feedback.innerHTML = "Vautsi vau! Olet todella kova luontotieteilijä jo. Jatka samaan malliin! :) Pistemääräsi oli " + score + "/" + questionlist.length + "<br><img src='../img/RikuA_quizimg/Great.png'>";
 } else if (score >= 4) {
-  feedback.innerHTML = "Hienosti meni! Jatka treenaamista, niin olet pienellä työllä kovakin luonnontieteilijä. Pistemääräsi oli " + score + "/" + questionlist.length;
+  feedback.innerHTML = "Hienosti meni! Jatka treenaamista, niin olet pienellä työllä kovakin luonnontieteilijä. Pistemääräsi oli " + score + "/" + questionlist.length + "<br><img src='../img/RikuA_quizimg/Good.png'>";
 } else {
-  feedback.innerHTML = "Nyt ei kyllä mennyt hyvin. Harjoittele vielä! Pistemääräsi oli: " + score + "/" + questionlist.length;
+  feedback.innerHTML = "Nyt ei kyllä mennyt hyvin. Harjoittele vielä! Pistemääräsi oli: " + score + "/" + questionlist.length + "<br><img src='../img/RikuA_quizimg/fail.jpg'>";
 }
 
 currentQuestionIndex = 0;
