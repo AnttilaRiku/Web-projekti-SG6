@@ -42,6 +42,9 @@ main {
 .navbar-nav .dropdown-item:hover {
   background-color: var(--tertiary-color);
 }
+h1{
+  text-align: center;
+}
 
 /*Cards centered on front page*/
 #games {
